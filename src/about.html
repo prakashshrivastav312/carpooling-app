@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static '/styleSheet/about.css' %}" />
+{% endblock css %}
+{% block title %}
+About Laveen-CarPooling
+{% endblock title %}
+{% block navbar %}
+    {% include 'navbar.html' %}
+{% endblock navbar %}
+{% block content %}
+<div class="about-section">
+
+  <img src="{% static '/media/images/back.jpg' %}" class="aboutcar">
+  <h1>Car Pooling</h1>
+  <p>Carpooling helps the environment, your wallet, and your trip to work-get on board with carpool.</p>
+
+</div>
+
+
+<div class="row" style="background-color: whitesmoke">
+
+  <div class="column">
+    <div class="card">
+      <img src="{% static '/media/images/back9.jpeg' %}" class="environ">
+      <div class="container">
+        <h2>Why Carpooling?</h2>
+        <p>Problems like traffic,
+          fuel cost, climate concerns and
+          many more.</p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+     
+      <img src="{% static '/media/images/tree1.jpg' %}" class="environ" >
+
+      
+      <div class="container">
+        <h2>Save Environment</h2>
+
+        <p>Today it is important to promote
+          initiatives to reduce car
+          dependency </p>
+
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="{%static '/media/images/Carpool.jpg' %}" class="environ" >
+      <div class="container">
+        <h2>Lesser Traffic Jams</h2>
+
+        <P>One of the best ideas to
+          reduce the vehicles on road and ensure
+          scarer traffic.</P>
+      </div>
+    </div>
+
+  </div>
+  {% endblock content %}
+  {% block footer %}
+  {% include 'footer.html'%}
+  {% endblock footer %}
